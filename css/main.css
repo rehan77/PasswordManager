@@ -1,0 +1,97 @@
+/* Global Settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+body{
+    /* background: url('img/login-back.jpg'); */
+    background-color: #e4e5eb;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header - NAVBAR and Logo*/
+header{
+    background: #415191;
+    padding: 15px 0;
+    text-align: center;
+}
+header li{
+    display: inline-block;
+    padding: 0 10px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header a:hover{
+    color: #e4e5eb;
+}
+.forms{
+    min-width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 4px gray;
+}
+.forms h2{
+    font-size: 40px;
+    margin: 20px;
+}
+input{
+    padding: 10px;
+    margin: 5px 0; /* should be like this to be aligned properly */
+    width: 50%;
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+input:focus{
+    border: 2px solid blue;
+}
+input[type="submit"]{
+    padding: 10px 20px;
+    border: 0;
+    width: 150px;
+    color: white;
+    background-color: #415191;
+    transition: .3s ease;
+}
+input[type="submit"]:hover{
+    background-color: #344070;
+}
+#login-extra{
+    padding: 5px;
+    margin-top: 15px;
+}
+#login-extra hr{
+    margin: 25px auto;
+    width: 80%;
+    color: #efefef;
+    text-align: center;
+}
+.reg-error{
+    margin: 0 auto; /*To center the div inside the parent div*/
+    width: 250px;
+    color: white;
+    border-radius: 5px;
+    background-color: #cf2323;
+}
+footer{
+    background: #415191;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+}
+@media screen and (min-width: 600px){
+    header{
+        text-align: left;
+    }
+    .forms{
+        width: 60%;
+    }
+}
