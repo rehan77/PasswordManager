@@ -17,7 +17,7 @@ registerInput.addEventListener('click', registerUser)
 
 function nameCheck(){
     if(nameInput.value === ''){
-        nameError.innerHTML = '<p>Name cannot be empty'
+        nameError.innerHTML = '<p>Name cannot be empty</p>'
     } else{
         nameError.style.display = 'none'
         return true

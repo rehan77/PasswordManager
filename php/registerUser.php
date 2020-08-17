@@ -18,8 +18,8 @@
     $username = $_POST["name"];
     $useremail = $_POST["email"];
     $userpassword = $_POST["password-entry"];
-    $salt = 'averageSaltLayer';
     //Hashing the input password during registration
+    $salt = 'averageSaltLayer';
     $hashed_pass = hash_pbkdf2('sha512', $userpassword, $salt, 3);
     
     //Function to check whether connection to MySQL DB is successful
