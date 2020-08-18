@@ -9,18 +9,18 @@
   <?php
     //Setting variables for MySQL DB connection
     $servername = "localhost";
-    $username = "root";
-    $password = "";
+    $db_username = "root";
+    $db_password = "";
     $db_name = "passwordmanager";
     //Connecting to MySQL DB
-    $conn = mysqli_connect($servername, $username, $password, $db_name);
+    $conn = mysqli_connect($servername, $db_username, $db_password, $db_name);
     //Getting Input field data from 'register.html' form
     $username = $_POST["name"];
     $useremail = $_POST["email"];
     $userpassword = $_POST["password-entry"];
     //Hashing the input password during registration
     $salt = 'averageSaltLayer';
-    $hashed_pass = hash_pbkdf2('sha512', $userpassword, $salt, 3);
+    $hashed_pass = hash_pbkdf2('sha512', $userpassword, $salt, 10000);
     
     //Function to check whether connection to MySQL DB is successful
     function checkConnection($conn){
@@ -50,7 +50,7 @@
           VALUES ('$username', '$hashed_pass', '$useremail')";
         if (mysqli_query($conn, $insert_new_user)) {
           //Redirecting to the login page
-          header('Location: ../index.html');
+          header('Location: ../index.php');
         } else {
           echo "Error: " . $insert_new_user . "<br>" . mysqli_error($conn);
         }

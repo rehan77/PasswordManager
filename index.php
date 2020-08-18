@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Login</a></li>
-                <li><a href="register.html">Sign Up</a></li>
-                <li><a href="help.html">Help</a></li>
+                <li><a href="index.php">Login</a></li>
+                <li><a href="register.php">Sign Up</a></li>
+                <li><a href="help.php">Help</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +24,7 @@
             <div class="reg-error" id="name-error"></div>
             <input id="password" type="password" placeholder="Password" name="login-pass" required/><br>
             <div class="reg-error" id="pass-length-error"></div>
-            <input type="submit" value="Login" id="login-btn"/>
+            <input type="submit" value="Login" name="submit" id="login-btn"/>
         </form>
         <div id="login-extra">
             <a href="forgot.html">Forgot password?</a>

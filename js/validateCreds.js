@@ -26,8 +26,4 @@ function checkPasswordLength(){
     }
 }
 
-function displayLoginError(){
-    
-}
-
 

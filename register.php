@@ -11,9 +11,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Login</a></li>
-                <li><a href="register.html">Sign Up</a></li>
-                <li><a href="help.html">Help</a></li>
+                <li><a href="index.php">Login</a></li>
+                <li><a href="register.php">Sign Up</a></li>
+                <li><a href="help.php">Help</a></li>
             </ul>
         </nav>
     </header>
