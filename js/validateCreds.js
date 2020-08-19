@@ -4,15 +4,15 @@ const loginInput = document.querySelector('#login-btn')
 const nameError = document.querySelector('#name-error')
 const printLengthError = document.querySelector('#pass-length-error')
 
-usernameInput.addEventListener('blur', nameCheck)
-passInput.addEventListener('blur', checkPasswordLength)
+usernameInput.addEventListener('change', nameCheck)
+passInput.addEventListener('change', checkPasswordLength)
 
 function nameCheck(){
-    if(usernameInput.value === ''){
-        nameError.innerHTML = '<p>Userame cannot be empty</p>'
-    } else{
+    if(usernameInput.value !== ''){
         nameError.style.display = 'none'
-        return true
+        return true   
+    } else{
+        nameError.innerHTML = '<p>Userame cannot be empty</p>'
     }
 }
 

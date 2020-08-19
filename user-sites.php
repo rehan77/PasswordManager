@@ -93,5 +93,6 @@
         </section>
     </div>
     <script src="js/addNewSite.js"></script>
+    <script src="js/printSiteData.js"></script>
 </body>
 </html>

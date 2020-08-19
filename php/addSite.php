@@ -48,7 +48,8 @@
     }
 
     if(addSiteDetails($conn, $sitename, $siteurl, $siteuser, $sitepass, $sitenotes, $username, $password)){
-      header('Refresh:0; url=../user-sites.php');
+      // header('Refresh:0; url=../user-sites.php');
+      header('Location: getSiteData.php');
       echo 'Site Added';
     }
     else{
