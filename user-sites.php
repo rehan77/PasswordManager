@@ -78,7 +78,7 @@
                     <input type="url" id="site-url" name="siteurl" placeholder="Site URL" required/><br>
                     <input type="text" id="site-user" name="siteuser" placeholder="Site Username" required/><br>
                     <input type="password" id="site-pass" name="sitepass" placeholder="Site Password" required/><br>
-                    <textarea cols="40" rows="5" name="sitenotes"></textarea><br>
+                    <textarea cols="40" rows="5" name="sitenotes" placeholder="Your notes go here..."></textarea><br>
                     <input type="submit" id="site-submit" name="sitesubmit" value="Add Site"/><br>
                 </form>
             </div>

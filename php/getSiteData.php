@@ -34,6 +34,7 @@
           $sql_query2 = mysqli_query($conn, $get_site_query);
           $array1 = array();
           $count = 'site1';
+          
           while($site_data = mysqli_fetch_assoc($sql_query2)){
             $result = json_encode($site_data);
             $array1[$count] = $result;
