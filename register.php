@@ -28,7 +28,7 @@
             <div class="reg-error" id="pass-length-error"></div>
             <input id="repass" type="password" placeholder="Confirm Password" required/><br>
             <div class="reg-error" id="pass-error"></div>
-            <input type="submit" value="Sign In" id="register-btn"/>
+            <input type="submit" value="Sign Up" id="register-btn"/>
         </form>
     </section>
     <footer>

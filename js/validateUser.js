@@ -10,9 +10,9 @@ const emailError = document.querySelector('#email-error')
 
 nameInput.addEventListener('change', nameCheck)
 registerInput.addEventListener('click', checkPassword)
-passwordInput.addEventListener('blur', checkPasswordLength)
+passwordInput.addEventListener('change', checkPasswordLength)
 registerInput.addEventListener('click', checkEmailEmpty)
-emailInput.addEventListener('blur', checkEmail)
+emailInput.addEventListener('change', checkEmail)
 registerInput.addEventListener('click', registerUser)
 
 function nameCheck(){

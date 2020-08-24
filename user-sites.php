@@ -91,6 +91,9 @@
                 </div>
             </div>
         </section>
+        <!-- <footer>
+            <p>2020 &copy; All Rights Reserved</p>
+        </footer> -->
     </div>
     <script src="js/addNewSite.js"></script>
     <script src="js/printSiteData.js"></script>
